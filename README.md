@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.reichelt.de/de/de/shop/produkt/arduino_uno_rev_3_smd-variante_atmega328_usb-119045",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -196,7 +196,7 @@ response = requests.get(
     params={
         "query": "1n4148",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
